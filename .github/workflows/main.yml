@@ -1,0 +1,12 @@
+name: My Second GitHub Actions
+
+on:
+  workflow_dispatch
+
+jobs:
+  run_script:
+    runs-on: ['self-hosted','Linux','X64','e-commerce']
+        
+    steps:
+      - name: Run a Script
+        run: bash /home/ubuntu/E-Commerce/actions-runner/scripts/test.sh
